@@ -2,7 +2,7 @@
 /**
  * _printf - Print based on format specifier
  * @format : Specifier argument
- * Return : an integer on success
+ * Return: word count
  **/
 
 int _printf(const char *format, ...)
