@@ -32,6 +32,11 @@ int _printf(const char *format, ...)
 				j += strlen(format_arg);
 			break;
 			}
+	/* Modulus formating */
+			case '%': {
+				buff[j++] = (char)va_arg(vl, int);
+			break;
+			}
 		}
 	}
 	else

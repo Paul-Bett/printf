@@ -12,6 +12,8 @@ int _printf(const char *format, ...)
 	char buff[1024] = {0}, *format_arg;
 
 	va_start(vl, format);
+	if (!format)
+		return (-1);
 	while (format && format[i])
 	{
 	if (format[i] == '%')
