@@ -12,6 +12,8 @@ int _printf(const char *format, ...)
 	char buff[1024] = {0}, *format_arg;
 
 	va_start(vl, format);
+	if (!format)
+		return (-1);
 	while (format && format[i])
 	{
 	if (format[i] == '%')
@@ -30,11 +32,6 @@ int _printf(const char *format, ...)
 				format_arg = va_arg(vl, char*);
 				strcpy(&buff[j], format_arg);
 				j += strlen(format_arg);
-			break;
-			}
-	/* Modulus formating */
-			case '%': {
-				buff[j++] = (char)va_arg(vl, int);
 			break;
 			}
 		}
