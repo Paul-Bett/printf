@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 {
 	va_list vl;
 	int i = 0, j = 0;
-	char buff[100] = {0};
+	char buff[1024] = {0};
 	char *format_arg;
 
 	va_start(vl, format);
