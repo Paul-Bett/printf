@@ -9,8 +9,7 @@ int _printf(const char *format, ...)
 {
 	va_list vl;
 	int i = 0, j = 0;
-	char buff[1024] = {0};
-	char *format_arg;
+	char buff[1024] = {0}, *format_arg;
 
 	va_start(vl, format);
 	while (format && format[i])
@@ -23,7 +22,7 @@ int _printf(const char *format, ...)
 	/* Convert char */
 			case 'c': {
 				buff[j] = (char)va_arg(vl, int);
-				j++;
+				j++
 			break;
 			}
 	/* copy formating */
@@ -33,18 +32,10 @@ int _printf(const char *format, ...)
 				j += strlen(format_arg);
 			break;
 			}
-/**			case '%': {
-				buff[j] = (char)va_arg(vl, int);
-				j++;
-			break;
-			}
-**/		}
+		}
 	}
 	else
-	{
-		buff[j] = format[i];
-		j++;
-	}
+		buff[j++] = format[i];
 	i++;
 	}
 	fwrite(buff, j, 1, stdout);
