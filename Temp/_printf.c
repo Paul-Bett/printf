@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 	/* Convert char */
 			case 'c': {
 				buff[j] = (char)va_arg(vl, int);
-				j++
+				j++;
 			break;
 			}
 	/* copy formating */
