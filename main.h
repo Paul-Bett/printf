@@ -35,4 +35,6 @@ void format_o(va_list valist, char *buffer, int *index);
 char *utos(char str[], unsigned int num);
 void format_p(va_list valist, char *buffer, int *index);
 void format_lx(va_list valist, char *buffer, int *index);
+int print_non_printable(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
 #endif
