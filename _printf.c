@@ -21,7 +21,8 @@ int _printf(const char *format, ...)
 		{'X', format_X},
 		{'o', format_o},
 		{'p', format_p},
-		{'S', format_S}
+		{'r', format_rev},
+		{'R', format_R}
 	};
 	if (!format)
 		return (-1);
