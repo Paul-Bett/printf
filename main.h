@@ -35,9 +35,6 @@ void format_o(va_list valist, char *buffer, int *index);
 char *utos(char str[], unsigned int num);
 void format_p(va_list valist, char *buffer, int *index);
 void format_lx(va_list valist, char *buffer, int *index);
-int format_S(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
-int append_hexa_code(char ascii_code, char buffer[], int i);
 void format_rev(va_list valist, char *buffer, int *index);
 void format_R(va_list valist, char *buffer, int *index);
 #endif
