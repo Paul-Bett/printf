@@ -10,19 +10,10 @@ int _printf(const char *format, ...)
 	int i, j = 0, a = 0, *index = &a;
 	va_list valist;
 	Scon specifier[] = {
-		{'c', format_c}, 
-		{'s', format_s},
-		{'%', format_perc},
-		{'d', format_d},
-		{'i', format_d},
-		{'b', format_b},
-		{'u', format_u},
-		{'x', format_x},
-		{'X', format_X},
-		{'o', format_o},
-		{'p', format_p},
-		{'r', format_rev},
-		{'R', format_R}
+		{'c', format_c}, {'s', format_s}, {'%', format_perc},
+		{'d', format_d}, {'i', format_d}, {'b', format_b},
+		{'u', format_u}, {'x', format_x}, {'X', format_X},
+		{'o', format_o}, {'p', format_p}, {'r', format_rev}, {'R', format_R}
 	};
 	if (!format)
 		return (-1);
