@@ -1,7 +1,8 @@
 #include "main.h"
 /**
-  * reset_buffer - function that initializes and resets a buffer
+  * _reset_buffer - function that initializes and resets a buffer
   * @buffer: buffer size
+  * Return: void
   */
 void _reset_buffer(char *buffer)
 {

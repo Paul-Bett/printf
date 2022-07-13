@@ -2,8 +2,10 @@
 /**
   * _write_string - function that writes a buffer conter
   * @buffer: buffer size
+  * @index: index of character
+  * Return: void
   */
-void _write_string(char *buffer,int *index)
+void _write_string(char *buffer, int *index)
 {
 	int i;
 

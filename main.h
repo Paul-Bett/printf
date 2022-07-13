@@ -15,7 +15,7 @@ typedef struct convert
 {
 	char ch;
 	void (*f)();
-}Scon;
+} Scon;
 
 int _printf(const char *format, ...);
 int _putchar(char);
