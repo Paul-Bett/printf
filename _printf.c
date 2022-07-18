@@ -12,8 +12,8 @@ int _printf(const char *format, ...)
 	Scon specifier[] = {
 		{'c', format_c}, {'s', format_s}, {'%', format_perc},
 		{'d', format_d}, {'i', format_d}, {'b', format_b}, {'\0', NULL},
-		{'u', format_u}, {'x', format_x}, {'X', format_X},
-		{'o', format_o}, {'p', format_p}, {'r', format_rev}, {'R', format_R}
+		{'u', format_u}, {'x', format_x}, {'X', format_X}, {'o', format_o},
+		{'p', format_p}, {'r', format_rev}, {'R', format_R}, {'\0', NULL},
 	};
 	if (!format)
 		return (-1);
